@@ -112,7 +112,7 @@ Clojure's eval does not work on strings.  You must first invoke Clojure's reader
 <pre class="code">
 >> clj = JRClj.new
 >> clj.eval clj.read_string "(+ 3 4)"
->> s = clj.eval clj.read_stirng ":symbol"
+>> s = clj.eval clj.read_string ":symbol"
 >> s.methods - Object.methods
 => ["__jsend!", "applyTo", "applyTo__method", "apply_to", "apply_to__method", "between?", "call", "call__method", "class__method", "clone__method", "compareTo", "compareTo__method", "compare_to", "compare_to__method", "equals", "equals?", "equals__method", "equals__method?", "finalize", "finalize__method", "getClass", "getClass__method", "getName", "getName__method", "getNamespace", "getNamespace__method", "get_class", "get_class__method", "get_name", "get_name__method", "get_namespace", "get_namespace__method", "hashCode", "hashCode__method", "hash_code", "hash_code__method", "initialize", "invoke", ...
 >> s.to_sring
